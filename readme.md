@@ -1,7 +1,6 @@
 # SVGTinyPS
-
+[![Latest Stable Version](http://poser.pugx.org/srwiez/php-svg-ps-converter/v)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![Total Downloads](http://poser.pugx.org/srwiez/php-svg-ps-converter/downloads)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![Latest Unstable Version](http://poser.pugx.org/srwiez/php-svg-ps-converter/v/unstable)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![License](http://poser.pugx.org/srwiez/php-svg-ps-converter/license)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![PHP Version Require](http://poser.pugx.org/srwiez/php-svg-ps-converter/require/php)](https://packagist.org/packages/srwiez/php-svg-ps-converter)
 [![Tests](https://github.com/SRWieZ/php-svg-ps-converter/actions/workflows/test.yml/badge.svg)](https://github.com/SRWieZ/php-svg-ps-converter/actions/workflows/tests.yml)
-[![Latest Stable Version](https://poser.pugx.org/SRWieZ/php-svg-ps-converter/v/stable)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter)
 
 SVG (Portable and Secure) converter for BIMI compliance.
 
