@@ -5,7 +5,7 @@
 
 SVG (Portable and Secure) converter for BIMI compliance.
 
-[Read more from bimi group](https://bimigroup.org/implementation-guide/)
+[Read more from bimi group](https://bimigroup.org/creating-bimi-svg-logo-files/)
 and [the RFC](https://datatracker.ietf.org/doc/id/draft-svg-tiny-ps-abrotman-00.txt)
 
 🧪 If you just want to convert your SVG, you can use the
