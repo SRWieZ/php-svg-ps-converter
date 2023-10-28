@@ -1,0 +1,38 @@
+{
+  "name": "srwiez/php-svg-ps-converter",
+  "description": "SVG (Portable and Secure) converter for BIMI compliance",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eser DENIZ",
+      "email": "srwiez@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SVGTinyPS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "pestphp/pest": "^2.0",
+    "symfony/var-dumper": "^6.3",
+    "laravel/pint": "^1.13"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
