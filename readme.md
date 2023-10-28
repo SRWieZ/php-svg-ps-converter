@@ -1,4 +1,4 @@
-# Thumbhash PHP
+# SVGTinyPS
 
 [![Tests](https://github.com/SRWieZ/php-svg-ps-converter/actions/workflows/test.yml/badge.svg)](https://github.com/SRWieZ/php-svg-ps-converter/actions/workflows/tests.yml)
 [![Latest Stable Version](https://poser.pugx.org/SRWieZ/php-svg-ps-converter/v/stable)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter)
