@@ -211,13 +211,17 @@ class SVGTinyPS
 
     protected ?string $title = null;
 
+    protected ?string $xmlText = null;
+
     /**
      * @throws Exception
      */
     public function __construct($xmlText)
     {
+        $this->xmlText = $xmlText;
+
         $this->dom = new DOMDocument();
-        $this->dom->loadXML($xmlText);
+        $this->dom->loadXML($this->xmlText);
 
         $this->svg = $this->dom->getElementsByTagName('svg')->item(0);
 
@@ -238,6 +242,11 @@ class SVGTinyPS
     public function identifyIssues()
     {
         $issues = [];
+
+        // Check if the logo <= 32KB
+        if (strlen($this->xmlText) > 32 * 1024) {
+            $issues[] = 'Logo is larger than 32KB';
+        }
 
         // Check for title element
         $title = $this->dom->getElementsByTagName('title')->item(0);
@@ -381,7 +390,10 @@ class SVGTinyPS
 
         self::sanitizeSvgDescendants($this->svg);
 
-        return $this->dom->saveXML();
+        $xml = $this->dom->saveXML();
+
+        // Remove white spaces between tags
+        return preg_replace('/>\s+</', '><', $xml);
     }
 
     protected static function sanitizeSvgDescendants(DOMNode $element): void

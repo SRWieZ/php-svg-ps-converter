@@ -10,10 +10,11 @@ test('it fixes all the issues we can fix', function ($svg) {
     $svg_converter = new SVGTinyPS($new_svg);
     $this->issues_after = $svg_converter->identifyIssues();
 
-    // Ignore squareness because we can't really fix that
+    // Ignore issues we can't really fix
     $this->issues_after = array_diff($this->issues_after, [
-        'SVG is not square',
+        'Logo is larger than 32KB',
         'Element <image> is not allowed',
+        'SVG is not square',
     ]);
 
     expect($this->issues_after)->toBeEmpty();

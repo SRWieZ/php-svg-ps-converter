@@ -37,9 +37,6 @@ $svg_converter = new SVGTinyPS(getSVGContent($svg_fixed));
 $issues_cannot_be_fixed = $svg_converter->identifyIssues();
 ```
 
-## Roadmap
-1. Check the size is under 32 kilobytes
-2. Return a minimized version of the SVG
 
 ## Credits
 
