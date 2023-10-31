@@ -18,20 +18,21 @@ composer require srwiez/php-svg-ps-converter
 
 ## Usage
 
-Example of usage:
-
+Example of identifying issues and converting the SVG:
 ```php
-// Identify issues and convert the SVG
 $svg_converter = new SVGTinyPS(getSVGContent($svg_content));
 $issues = $svg_converter->identifyIssues();
 $svg_fixed= $svg_converter->convert();
+```
 
-// Some issues cannot be fixed automatically,
-// you can get them by rerunning identifyIssues()
-//
-// Namely, the issues that cannot be fixed are:
-// - The SVG contains an image
-// - The SVG contains is not square
+Some issues cannot be fixed automatically, you can get them by rerunning identifyIssues()
+
+Namely, the issues that cannot be fixed are:
+- The SVG contains an image
+- The SVG is not square
+- The SVG size > 32kb
+```php
+
 $svg_converter = new SVGTinyPS(getSVGContent($svg_fixed));
 $issues_cannot_be_fixed = $svg_converter->identifyIssues();
 ```
