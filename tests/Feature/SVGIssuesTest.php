@@ -11,6 +11,8 @@ test('it returns issues', function ($svg, $issues_excepted) {
     // var_export(array_values(array_unique($issues)));
 
     $diff = array_diff(array_unique($issues), array_unique($issues_excepted));
+    $diff2 = array_diff(array_unique($issues), array_unique($issues_excepted));
 
-    expect($diff)->toBeEmpty();
+    expect($diff)->toBeEmpty()
+        ->and($diff2)->toBeEmpty();
 })->with('logos');

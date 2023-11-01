@@ -23,7 +23,7 @@
       "Tests\\": "tests/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "require-dev": {
     "pestphp/pest": "^2.0",
