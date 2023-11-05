@@ -476,10 +476,13 @@ class SVGTinyPS
     {
         $viewBox = $this->svg->getAttribute('viewBox');
         if ($viewBox) {
-            [$minX, $minY, $vbWidth, $vbHeight] = array_map('floatval', explode(' ', $viewBox));
-            // dd($minX, $minY, $vbWidth, $vbHeight);
-            if ($vbWidth > 0 && $vbHeight > 0) {
-                return $vbWidth / $vbHeight;
+            $result = array_map('abs', array_map('floatval', explode(' ', $viewBox)));
+            if (count($result) === 4) {
+                [$minX, $minY, $vbWidth, $vbHeight] = $result;
+
+                if ($vbWidth > 0 && $vbHeight > 0) {
+                    return $vbWidth / $vbHeight;
+                }
             }
         }
 
