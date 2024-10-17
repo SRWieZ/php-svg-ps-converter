@@ -220,7 +220,7 @@ class SVGTinyPS
     {
         $this->xmlText = $xmlText;
 
-        $this->dom = new DOMDocument();
+        $this->dom = new DOMDocument;
         $this->dom->loadXML($this->xmlText);
 
         $this->svg = $this->dom->getElementsByTagName('svg')->item(0);
