@@ -1,5 +1,5 @@
 # SVGTinyPS
-[![Latest Stable Version](http://poser.pugx.org/srwiez/php-svg-ps-converter/v)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![Total Downloads](http://poser.pugx.org/srwiez/php-svg-ps-converter/downloads)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![Latest Unstable Version](http://poser.pugx.org/srwiez/php-svg-ps-converter/v/unstable)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![License](http://poser.pugx.org/srwiez/php-svg-ps-converter/license)](https://packagist.org/packages/srwiez/php-svg-ps-converter) [![PHP Version Require](http://poser.pugx.org/srwiez/php-svg-ps-converter/require/php)](https://packagist.org/packages/srwiez/php-svg-ps-converter)
+[![Latest Stable Version](http://poser.pugx.org/SRWieZ/php-svg-ps-converter/v)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter) [![Total Downloads](http://poser.pugx.org/SRWieZ/php-svg-ps-converter/downloads)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter) [![Latest Unstable Version](http://poser.pugx.org/SRWieZ/php-svg-ps-converter/v/unstable)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter) [![License](http://poser.pugx.org/SRWieZ/php-svg-ps-converter/license)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter) [![PHP Version Require](http://poser.pugx.org/SRWieZ/php-svg-ps-converter/require/php)](https://packagist.org/packages/SRWieZ/php-svg-ps-converter)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SRWieZ/php-svg-ps-converter/test.yml?label=Tests)
 
 
@@ -13,13 +13,13 @@ and [the RFC](https://datatracker.ietf.org/doc/id/draft-svg-tiny-ps-abrotman-00.
 
 You can also checkout the [command line version](https://github.com/SRWieZ/svgps-commandline) of this project.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 composer require srwiez/php-svg-ps-converter
 ```
 
-## Usage
+## 📚 Usage
 
 Example of identifying issues and converting the SVG:
 ```php
@@ -41,7 +41,7 @@ $issues_cannot_be_fixed = $svg_converter->identifyIssues();
 ```
 
 
-## Credits
+## 👥 Credits
 
 SVGTinyPS was created by Eser DENIZ.
 
@@ -50,6 +50,6 @@ of [authindicators/svg-ps-converters](https://github.com/authindicators/svg-ps-c
 
 Thanks to [gilbarbara/logos](https://github.com/gilbarbara/logos) for the logos used in the tests.
 
-## License
+## 📝 License
 
 SVGTinyPS PHP is licensed under the MIT License. See LICENSE for more information.
