@@ -2,9 +2,9 @@
 
 use SVGTinyPS\SVGTinyPS;
 
-test('it returns issues', function ($svg, $issues_excepted) {
+test('it returns issues', function ($logo, $issues_excepted) {
 
-    $svgConverter = new SVGTinyPS(getSVGContent($svg));
+    $svgConverter = new SVGTinyPS(getSVGContent($logo));
     $issues = $svgConverter->identifyIssues();
 
     // Useful when you want to update the dataset

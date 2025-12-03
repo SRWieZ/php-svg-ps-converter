@@ -332,7 +332,7 @@ class SVGTinyPS
             $title->parentNode?->removeChild($title);
         }
 
-        //Change $title textnode
+        // Change $title textnode
         if ($this->title !== null) {
             $title->nodeValue = $this->title;
         }
