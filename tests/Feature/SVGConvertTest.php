@@ -2,8 +2,8 @@
 
 use SVGTinyPS\SVGTinyPS;
 
-test('it fixes all the issues we can fix', function ($svg) {
-    $svg_converter = new SVGTinyPS(getSVGContent($svg));
+test('it fixes all the issues we can fix', function ($logo, $issues_excepted) {
+    $svg_converter = new SVGTinyPS(getSVGContent($logo));
     $svg_converter->identifyIssues();
     $new_svg = $svg_converter->convert();
 

@@ -13,13 +13,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        php: [8.2, 8.3, 8.4]
+        php: [8.2, 8.3, 8.4, 8.5]
 
     name: Test with php ${{ matrix.php }} on ${{ matrix.os }}
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -43,4 +43,4 @@ jobs:
         run: composer update --no-interaction --prefer-dist
 
       - name: Run tests
-        run: ./vendor/bin/pest
+        run: ./vendor/bin/pest --ci --fail-on-deprecation -p
