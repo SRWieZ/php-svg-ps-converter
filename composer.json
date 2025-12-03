@@ -26,8 +26,8 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require-dev": {
-    "pestphp/pest": "^4.0",
-    "symfony/var-dumper": "^8.0",
+    "pestphp/pest": "^3.0|^4.0",
+    "symfony/var-dumper": "^6.0|^7.0|^8.0",
     "laravel/pint": "^1.13"
   },
   "scripts": {
